@@ -1,0 +1,38 @@
+{
+  "name": "alhames/string",
+  "type": "library",
+  "description": "A collection of functions to simplify working with strings.",
+  "keywords": ["php", "string"],
+  "homepage": "https://github.com/alhames/string",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Pavel Logachev",
+      "email": "alhames@mail.ru",
+      "homepage": "https://alhames.ru/"
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "ext-mbstring": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^9.0"
+  },
+  "support": {
+    "issues": "https://github.com/alhames/string/issues"
+  },
+  "autoload": {
+    "psr-4": {
+      "Alhames\\String\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Alhames\\String\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  }
+}
